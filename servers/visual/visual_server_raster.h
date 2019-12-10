@@ -284,6 +284,10 @@ public:
 	BIND2(immediate_set_material, RID, RID)
 	BIND1RC(RID, immediate_get_material, RID)
 
+	/* DECAL API */
+	BIND0R(RID, decal_create)
+	BIND2(decal_set_texture, RID, RID)
+
 	/* SKELETON API */
 
 	BIND0R(RID, skeleton_create)

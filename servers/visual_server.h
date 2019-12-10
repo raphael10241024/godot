@@ -381,6 +381,10 @@ public:
 	virtual void immediate_set_material(RID p_immediate, RID p_material) = 0;
 	virtual RID immediate_get_material(RID p_immediate) const = 0;
 
+	/* DECAL API */
+	virtual RID decal_create() = 0;
+	virtual void decal_set_texture(RID p_decal, RID p_texture) = 0;
+
 	/* SKELETON API */
 
 	virtual RID skeleton_create() = 0;

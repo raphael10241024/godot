@@ -1748,6 +1748,8 @@ void VisualServer::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("immediate_clear", "immediate"), &VisualServer::immediate_clear);
 	ClassDB::bind_method(D_METHOD("immediate_set_material", "immediate", "material"), &VisualServer::immediate_set_material);
 	ClassDB::bind_method(D_METHOD("immediate_get_material", "immediate"), &VisualServer::immediate_get_material);
+	ClassDB::bind_method(D_METHOD("decal_create"), &VisualServer::decal_create);
+	ClassDB::bind_method(D_METHOD("decal_set_texture"), &VisualServer::decal_set_texture);
 #endif
 
 	ClassDB::bind_method(D_METHOD("skeleton_create"), &VisualServer::skeleton_create);

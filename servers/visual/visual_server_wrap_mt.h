@@ -220,6 +220,10 @@ public:
 	FUNC2(immediate_set_material, RID, RID)
 	FUNC1RC(RID, immediate_get_material, RID)
 
+	/* DECAL API*/
+	FUNCRID(decal)
+	FUNC2(decal_set_texture, RID, RID)
+
 	/* SKELETON API */
 
 	FUNCRID(skeleton)

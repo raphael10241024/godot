@@ -5132,6 +5132,18 @@ RID RasterizerStorageGLES3::immediate_get_material(RID p_immediate) const {
 	return im->material;
 }
 
+/* DECAL API */
+RID RasterizerStorageGLES3::decal_create() {
+	Decal *decal = memnew(Decal);
+	return decal_owner.make_rid(decal);
+}
+
+void RasterizerStorageGLES3::decal_set_texture(RID p_decal, RID p_texture) {
+	Decal *decal = decal_owner.getornull(p_decal);
+	ERR_FAIL_COND(!decal, 0);
+	decal->texture = p_texture;
+}
+
 /* SKELETON API */
 
 RID RasterizerStorageGLES3::skeleton_create() {

@@ -885,6 +885,16 @@ public:
 	virtual RID immediate_get_material(RID p_immediate) const;
 	virtual AABB immediate_get_aabb(RID p_immediate) const;
 
+	/* DECAL API */
+
+	struct Decal : RID_Data {
+		RID texture;
+	};
+
+	mutable RID_Owner<Decal> decal_owner;
+	virtual RID decal_create();
+	virtual void decal_set_texture(RID p_decal, RID p_texture);
+
 	/* SKELETON API */
 
 	struct Skeleton : RID_Data {

@@ -853,6 +853,11 @@ public:
 	virtual void immediate_set_material(RID p_immediate, RID p_material);
 	virtual RID immediate_get_material(RID p_immediate) const;
 	virtual AABB immediate_get_aabb(RID p_immediate) const;
+	/* DECAL API */
+	//TODO::
+
+	virtual RID decal_create() { return RID(); }
+	virtual void decal_set_texture(RID p_decal, RID p_texture) {}
 
 	/* SKELETON API */
 

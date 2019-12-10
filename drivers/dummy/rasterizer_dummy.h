@@ -458,6 +458,10 @@ public:
 	RID immediate_get_material(RID p_immediate) const { return RID(); }
 	AABB immediate_get_aabb(RID p_immediate) const { return AABB(); }
 
+	/* DECAL API */
+	RID decal_create() { return RID(); }
+	void decal_set_texture(RID p_decal, RID p_texture) {}
+
 	/* SKELETON API */
 
 	RID skeleton_create() { return RID(); }
